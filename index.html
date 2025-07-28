@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Showcase - Team 7-A</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+
 <body class="font-sans text-gray-900">
 
     <!-- Navigation -->
@@ -23,161 +27,243 @@
     </header>
 
     <!-- Hero -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center relative" style="background-image: url('images/river-kelvin-hero.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-white">
-        <h1 class="text-5xl font-bold mb-4">River Condition Prediction</h1>
-        <p class="text-lg mb-6">Project Showcase by Team 7-A</p>
-        <a href="#prototype1" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">View Prototypes</a>
-    </div>
-</section>
+    <section id="home"
+        class="h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center relative"
+        style="background-image: url('images/river-kelvin-hero.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-white">
+            <h1 class="text-5xl font-bold mb-4">River Condition Prediction</h1>
+            <p class="text-lg mb-6">Project Showcase by Team 7-A</p>
+            <a href="#prototype1" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">View
+                Prototypes</a>
+        </div>
+    </section>
 
 
     <!-- Prototype Sections -->
-    <section id="prototype1" class="py-20 container mx-auto px-6">
-    <h2 class="text-3xl font-semibold mb-6 text-center">Prototype 1: Lo-fi</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-        <!-- Image 1 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Lo-fi 1" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Lo-fi Sketch - Story Poster</p>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-8 text-center">Lo-Fi Prototype</h3>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Poster" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Poster</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Page" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Page</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level Poster"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level Poster</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level & Flow Rate Prediction Page"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination mt-6"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+            </div>
         </div>
-        <!-- Image 2 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Lo-fi 2" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Lo-fi Sketch - Story Page</p>
-        </div>
-        <!-- Image 3 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Lo-fi 3" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Lo-fi Sketch - Water Level Poster</p>
-        </div>
-        <!-- Image 4 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Lo-fi 4" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Lo-fi Sketch - Water Level & Flow Rate Predition Page</p>
-        </div>
-    </div>
     </section>
 
 
-    <section id="prototype2" class="py-20 container mx-auto px-6">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Prototype 2: Mid-fi</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-        <!-- Image 1 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Mid-fi 1" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Mid-fi Sketch - Story Poster</p>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-8 text-center">Mid-Fi Prototype</h3>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Poster" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Poster</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Page" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Page</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level Poster"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level Poster</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level & Flow Rate Prediction Page"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination mt-6"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+            </div>
         </div>
-        <!-- Image 2 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Mid-fi 2" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Mid-fi Sketch - Story Page</p>
-        </div>
-        <!-- Image 3 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Mid-fi 3" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Mid-fi Sketch - Water Level Poster</p>
-        </div>
-        <!-- Image 4 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Mid-fi 4" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Mid-fi Sketch - Water Level & Flow Rate Predition Page</p>
-        </div>
-    </div>
     </section>
 
-    <section id="prototype3" class="py-20 container mx-auto px-6">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Prototype 3: Hi-fi</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-        <!-- Image 1 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Hi-fi 1" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Hi-fi Sketch - Story Poster</p>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-8 text-center">Hi-Fi Prototype</h3>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Poster" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Poster</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Page" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Page</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level Poster"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level Poster</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level & Flow Rate Prediction Page"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination mt-6"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+            </div>
         </div>
-        <!-- Image 2 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Hi-fi 2" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Hi-fi Sketch - Story Page</p>
-        </div>
-        <!-- Image 3 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Hi-fi 3" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Hi-fi Sketch - Water Level Poster</p>
-        </div>
-        <!-- Image 4 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Hi-fi 4" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Hi-fi Sketch - Water Level & Flow Rate Predition Page</p>
-        </div>
-    </div>
     </section>
 
     <!-- Final Result -->
-    <section id="final" class="py-20 container mx-auto px-6">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Final Result</h2>
-<div class="grid md:grid-cols-2 gap-6">
-        <!-- Image 1 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Story Poster" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Story Poster</p>
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-8 text-center">Final Result</h3>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Poster" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Poster</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Story Page" class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Story Page</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level Poster"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level Poster</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                        <img src="https://via.placeholder.com/400x300" alt="Water Level & Flow Rate Prediction Page"
+                            class="rounded-lg mb-4" />
+                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination mt-6"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+            </div>
         </div>
-        <!-- Image 2 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Story Page" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Story Page</p>
-        </div>
-        <!-- Image 3 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Water Level Poster" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Water Level Poster</p>
-        </div>
-        <!-- Image 4 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
-            <img src="https://via.placeholder.com/400x300" alt="Water Level & Flow Rate Predition Page" class="rounded-lg mb-4">
-            <p class="text-gray-700 font-medium">Water Level & Flow Rate Predition Page</p>
-        </div>
-    </div>    </section>
+    </section>
+
 
     <!-- Reflections -->
     <section id="reflections" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-semibold mb-8">Reflections</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Reflection Card -->
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Richard Peters Aksarachai (2957830A)</h3>
-                <p class="text-gray-600">I reflected on how the design evolved and what I learned from the process.</p>
-            </div>
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-8">Reflections</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Xieng Hua Tan (2957977T)</h3>
-                <p class="text-gray-600">Reflected on user feedback and improving the mid-fi prototype.</p>
-            </div>
+                <!-- Reflection Card -->
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Richard Peters Aksarachai (2957830A)</h3>
+                    <p class="text-gray-600">I reflected on how the design evolved and what I learned from the process.
+                    </p>
+                </div>
 
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Sean Lee Wei Chuan (2957897L)</h3>
-                <p class="text-gray-600">Focused on usability and accessibility throughout development.</p>
-            </div>
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Xieng Hua Tan (2957977T)</h3>
+                    <p class="text-gray-600">Reflected on user feedback and improving the mid-fi prototype.</p>
+                </div>
 
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Heng Xu Yang (2957874H)</h3>
-                <p class="text-gray-600">Learned about data visualization techniques for river predictions.</p>
-            </div>
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Sean Lee Wei Chuan (2957897L)</h3>
+                    <p class="text-gray-600">Focused on usability and accessibility throughout development.</p>
+                </div>
 
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Christian Angelo Lau Candelario (2957847C)</h3>
-                <p class="text-gray-600">Reflected on how prototyping improved team collaboration.</p>
-            </div>
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Heng Xu Yang (2957874H)</h3>
+                    <p class="text-gray-600">Learned about data visualization techniques for river predictions.</p>
+                </div>
 
-            <div class="p-6 bg-white rounded-lg shadow text-left">
-                <h3 class="text-xl font-bold mb-2">Zheng Liang Ignatius Lim (2957928L)</h3>
-                <p class="text-gray-600">Gained insights into UI consistency and user-centered design.</p>
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Christian Angelo Lau Candelario (2957847C)</h3>
+                    <p class="text-gray-600">Reflected on how prototyping improved team collaboration.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-lg shadow text-left">
+                    <h3 class="text-xl font-bold mb-2">Zheng Liang Ignatius Lim (2957928L)</h3>
+                    <p class="text-gray-600">Gained insights into UI consistency and user-centered design.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Footer -->
@@ -185,5 +271,24 @@
         <p class="text-gray-600">© 2025 Team 7-A. All rights reserved. Thanks ChatGPT</p>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
 </body>
+
 </html>
