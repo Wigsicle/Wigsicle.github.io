@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Showcase - Team 7-A</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -14,16 +16,31 @@
 
     <!-- Navigation -->
     <header class="fixed w-full bg-white shadow z-50">
-        <nav class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-xl font-bold">Team 7-A</h1>
-            <ul class="flex gap-6">
-                <li><a href="#lo-fi" class="hover:text-blue-500">Lo-fi</a></li>
-                <li><a href="#mid-fi" class="hover:text-blue-500">Mid-fi</a></li>
-                <li><a href="#hi-fi" class="hover:text-blue-500">Hi-fi</a></li>
-                <li><a href="#final" class="hover:text-blue-500">Final Result</a></li>
-                <li><a href="#reflections" class="hover:text-blue-500">Reflections</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-left">Team 7-A</div>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#justification">Justification</a>
+            <a href="#design-journey">Design Journey</a>
+            <a href="#partner-interaction">Interaction with Partners</a>
+            <a href="#weekly-pitches">Weekly Pitches</a>
+            <div class="dropdown">
+                <button class="dropbtn">Prototypes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#lo-fi-1">Lo-fi 1</a>
+                    <a href="#lo-fi-2">Lo-fi 2</a>
+                    <a href="#lo-fi-3">Lo-fi 3</a>
+                    <a href="#lo-fi-4">Lo-fi 4</a>
+                    <a href="#hi-fi">Hi-fi</a>
+                </div>
+            </div>
+            <a href="#poster">Poster</a>
+            <a href="#essay">What we're proud of</a>
+            <a href="#reflections">Reflections</a>
+            <a href="#meet-the-team">Meet The Team</a>
+        </div>
     </header>
 
     <!-- Hero -->
@@ -34,199 +51,379 @@
         <div class="relative z-10 text-white">
             <h1 class="text-5xl font-bold mb-4">River Condition Prediction</h1>
             <p class="text-lg mb-6">Project Showcase by Team 7-A</p>
-            <a href="#lo-fi" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">View
+            <a href="#prototypes" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">View
                 Prototypes</a>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section id="problem" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                Problem Statement
+            </h2>
+            <div class="grid md:grid-cols-1 gap-12 items-center text-center">
+                <div>
+                    <p class="text-gray-700 leading-relaxed mx-auto max-w-3xl">
+                        How can we accurately predict river flow rate and conditions to enhance the safety of the public
+                        and protect wildlife, while also forecasting pollution levels downstream? Current data provided
+                        by SEPA is often difficult for the general public to interpret, especially for anticipating
+                        future conditions. There is also an increasing need to understand how the upstream flow rates
+                        impact downstream pollution. Our challenge lies in making this information more accessible,
+                        actionable, and predictive with possible integrations with weather data, AI modelling, and
+                        community-contributed observations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposed Solution -->
+    <section id="solution" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                Proposed Solution
+            </h2>
+            <div class="grid md:grid-cols-1 gap-12 items-center text-center">
+                <div>
+                    <p class="text-gray-700 leading-relaxed mx-auto max-w-3xl">
+                        Our solution focuses on simplifying river condition forecasting using a combination of existing
+                        SEPA data, weather integration, and user-contributed data. By applying AI models and intuitive
+                        visualisations, we aim to provide real-time and predictive insights into river safety and
+                        pollution trends. This will empower the public, local authorities, and environmental agencies
+                        with timely and clear information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Justification For Proposed Solution -->
+    <section id="justification" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-balance-scale text-blue-600 mr-2"></i>
+                Justification
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 leading-relaxed">
+                    Write Stuff Here
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Journey -->
+    <section id="design-journey" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-route text-green-600 mr-2"></i>
+                Design Journey
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 leading-relaxed">
+                    Start from ideation, summarize user interviews or pain points, include a timeline or bullet list of
+                    design iterations, mention how each prototype version evolved.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Interaction -->
+    <section id="partner-interaction" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-handshake text-purple-600 mr-2"></i>
+                Interaction with Partners
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 leading-relaxed">
+                    Reflect on how discussions with stakeholders shaped your solution, what you learned from partners,
+                    and
+                    what you would do differently.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Pitch Videos -->
+    <section id="weekly-pitches" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-video text-red-600 mr-2"></i>
+                Weekly Pitch Videos
+            </h2>
+            <div class="grid gap-8">
+
+                <!-- Week 1 -->
+                <div class="bg-white rounded-lg shadow p-4">
+                    <h3 class="text-xl font-bold mb-4">Week 1 Pitch</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/VIDEO_ID_1"
+                            title="Week 1 Pitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="bg-white rounded-lg shadow p-4">
+                    <h3 class="text-xl font-bold mb-4">Week 2 Pitch</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/VIDEO_ID_2"
+                            title="Week 2 Pitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
 
     <!-- Prototype Sections -->
-    <section id="lo-fi" class="py-20 bg-white">
+    <section id="prototypes" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-semibold mb-8 text-center">Lo-Fi Prototype</h3>
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-flask text-teal-600 mr-2"></i>
+                Prototypes
+            </h2>
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
+            <!-- Lo-Fi 1 -->
+            <div id="lo-fi-1" class="py-5 bg-white">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Lo-Fi Prototype 1</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-poster.jpg" alt="Story Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Poster</p>
+                        </div>
 
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/lo-fi/story-poster.jpg" alt="Story Poster" class="w-[500px] h-[450px] rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Poster</p>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-page.jpg" alt="Story Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Page</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level Poster</p>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-prediction-page.jpg"
+                                alt="Water Level & Flow Rate Prediction Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                        </div>
                     </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/lo-fi/story-page.jpg" alt="Story Page" class="w-[500px] h-[450px] rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Page</p>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
-                            class="w-[500px] h-[450px] rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level Poster</p>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/lo-fi/water-level-prediction-page.jpg" alt="Water Level & Flow Rate Prediction Page"
-                            class="w-[500px] h-[450px] rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
-                    </div>
+                    <div class="swiper-pagination mt-6"></div>
+                    <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                    <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
                 </div>
+            </div>
 
-                <!-- Pagination (dots) -->
-                <div class="swiper-pagination mt-6"></div>
+            <!-- Lo-Fi 2 -->
+            <div id="lo-fi-2" class="py-5 bg-white">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Lo-Fi Prototype 2</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-poster.jpg" alt="Story Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Poster</p>
+                        </div>
 
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
-                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-page.jpg" alt="Story Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Page</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level Poster</p>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-prediction-page.jpg"
+                                alt="Water Level & Flow Rate Prediction Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-6"></div>
+                    <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                    <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+                </div>
+            </div>
+
+            <!-- Lo-Fi 3 -->
+            <div id="lo-fi-3" class="py-5 bg-white">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Lo-Fi Prototype 3</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-poster.jpg" alt="Story Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Poster</p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-page.jpg" alt="Story Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Page</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level Poster</p>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-prediction-page.jpg"
+                                alt="Water Level & Flow Rate Prediction Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-6"></div>
+                    <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                    <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+                </div>
+            </div>
+
+            <!-- Lo-Fi 4 -->
+            <div id="lo-fi-4" class="py-5 bg-white">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Lo-Fi Prototype 4</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-poster.jpg" alt="Story Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Poster</p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-page.jpg" alt="Story Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Page</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level Poster</p>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-prediction-page.jpg"
+                                alt="Water Level & Flow Rate Prediction Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-6"></div>
+                    <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                    <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+                </div>
+            </div>
+
+            <!-- Hi-Fi -->
+            <div id="hi-fi" class="py-5 bg-white">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Hi-Fi Prototype</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-poster.jpg" alt="Story Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Poster</p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/story-page.jpg" alt="Story Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Story Page</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-poster.jpg" alt="Water Level Poster"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level Poster</p>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                            <img src="images/lo-fi/water-level-prediction-page.jpg"
+                                alt="Water Level & Flow Rate Prediction Page"
+                                class="w-[500px] h-[450px] rounded-lg mb-4" />
+                            <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-6"></div>
+                    <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
+                    <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section id="mid-fi" class="py-20 bg-white">
+    <!-- Poster -->
+    <section id="poster" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-semibold mb-8 text-center">Mid-Fi Prototype</h3>
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/mid-fi/" alt="Story Poster" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Poster</p>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/mid-fi/" alt="Story Page" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Page</p>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/mid-fi/" alt="Water Level Poster"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level Poster</p>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/mid-fi/" alt="Water Level & Flow Rate Prediction Page"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
-                    </div>
-
-                </div>
-
-                <!-- Pagination (dots) -->
-                <div class="swiper-pagination mt-6"></div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
-                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-image text-orange-500 mr-2"></i>
+                Poster
+            </h2>
+            <div class="flex justify-center">
+                <img src="images/poster.png" alt="Project Poster" class="rounded-lg shadow-lg max-w-[700px] h-auto">
             </div>
         </div>
     </section>
 
-    <section id="hi-fi" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-semibold mb-8 text-center">Hi-Fi Prototype</h3>
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/hi-fi/" alt="Story Poster" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Poster</p>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/hi-fi/" alt="Story Page" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Page</p>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/hi-fi/" alt="Water Level Poster"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level Poster</p>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/hi-fi/" alt="Water Level & Flow Rate Prediction Page"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
-                    </div>
-
-                </div>
-
-                <!-- Pagination (dots) -->
-                <div class="swiper-pagination mt-6"></div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
-                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
-            </div>
+    <!-- Essay -->
+    <section id="essay" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-trophy text-yellow-500 mr-2"></i>
+                What We're Proud Of
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                A short essay on the team's feelings about the project outcome: what worked well, what didn't, and why.
+                Highlight the biggest lesson or challenge.
+            </p>
         </div>
     </section>
-
-    <!-- Final Result -->
-    <section id="final" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-semibold mb-8 text-center">Final Result</h3>
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/final/" alt="Story Poster" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Poster</p>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/final/" alt="Story Page" class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Story Page</p>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/final/" alt="Water Level Poster"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level Poster</p>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide bg-white rounded-lg shadow p-4 flex flex-col items-center">
-                        <img src="images/final/" alt="Water Level & Flow Rate Prediction Page"
-                            class="rounded-lg mb-4" />
-                        <p class="text-gray-700 font-medium">Water Level & Flow Rate Prediction Page</p>
-                    </div>
-
-                </div>
-
-                <!-- Pagination (dots) -->
-                <div class="swiper-pagination mt-6"></div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev text-gray-700 hover:text-blue-500" aria-label="Previous slide"></div>
-                <div class="swiper-button-next text-gray-700 hover:text-blue-500" aria-label="Next slide"></div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Reflections -->
-    <section id="reflections" class="py-20 bg-gray-50">
+    <section id="reflections" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-semibold mb-8">Reflections</h2>
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-comment-alt text-indigo-600 mr-2"></i>
+                Reflections
+            </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Reflection Card -->
@@ -264,6 +461,54 @@
         </div>
     </section>
 
+    <!-- Meet the Team -->
+    <section id="meet-the-team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                <i class="fas fa-users text-green-600 mr-2"></i>
+                Meet The Team
+            </h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center">
+
+                <!-- Team Member -->
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Richard Peters Aksarachai"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Richard Peters Aksarachai</h3>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=24" alt="Xieng Hua Tan"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Xieng Hua Tan</h3>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=36" alt="Sean Lee Wei Chuan"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Sean Lee Wei Chuan</h3>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=48" alt="Heng Xu Yang"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Heng Xu Yang</h3>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=60" alt="Christian Angelo Lau Candelario"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Christian A. L. Candelario</h3>
+                </div>
+
+                <div class="text-center">
+                    <img src="https://i.pravatar.cc/150?img=61" alt="Zheng Liang Ignatius Lim"
+                        class="w-40 h-40 rounded-full object-cover mx-auto mb-4 shadow">
+                    <h3 class="text-xl font-bold">Ignatius Lim</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-white text-center py-6 border-t">
@@ -287,6 +532,115 @@
             },
         });
     </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar a,
+        .navbar-left,
+        .dropbtn {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .navbar-left {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover,
+        .dropbtn:hover {
+            background-color: #3b82f6;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #3b82f6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
+    <button id="backToTopBtn" title="Back to top"
+        class="fixed bottom-8 right-8 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 z-50"
+        aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <style>
+        #backToTopBtn {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        #backToTopBtn.show {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+
 
 </body>
 
