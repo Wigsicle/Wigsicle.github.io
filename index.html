@@ -15,33 +15,84 @@
 <body class="font-sans text-gray-900">
 
     <!-- Navigation -->
-    <header class="fixed w-full bg-white shadow z-50">
-        <div class="navbar">
-            <div class="navbar-left">Team 7-A</div>
-            <a href="#problem">Problem</a>
-            <a href="#solution">Solution</a>
-            <a href="#justification">Justification</a>
-            <a href="#design-journey">Design Journey</a>
-            <div class="dropdown">
-                <button class="dropbtn">Prototypes
-                    <i class="fa fa-caret-down"></i>
+    <header class="fixed w-full bg-[#333] shadow z-50 text-white">
+        <div class="max-w-screen-xl mx-auto px-4 flex justify-between items-center h-16">
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#story-poster">Story Poster</a>
-                    <a href="#water-level-poster">Water Level Poster</a>
-                    <a href="#story-page">Story Page</a>
-                    <a href="#dashboard">Dashboard Page</a>
-                    <a href="#final">Final Solution</a>
+            </div>
+            <nav id="menu" class="hidden lg:flex space-x-4 items-center">
+                <a href="#problem" class="whitespace-nowrap">Problem</a>
+                <a href="#solution" class="whitespace-nowrap">Solution</a>
+                <a href="#justification" class="whitespace-nowrap">Justification</a>
+                <a href="#design-journey" class="whitespace-nowrap">Design Journey</a>
+                <div class="relative group">
+                    <button class="dropbtn flex items-center gap-1 p-0 whitespace-nowrap">
+                        Prototypes
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div
+                        class="dropdown-content absolute hidden group-hover:block bg-white shadow rounded mt-2 p-2 z-50">
+                        <a href="#story-poster">Story Poster</a>
+                        <a href="#water-level-poster">Water Level Poster</a>
+                        <a href="#story-page">Story Page</a>
+                        <a href="#dashboard">Dashboard Page</a>
+                        <a href="#final">Final Solution</a>
+                    </div>
+                </div>
+                <a href="#poster" class="whitespace-nowrap">Poster</a>
+                <a href="#weekly-pitches" class="whitespace-nowrap">Weekly Pitches</a>
+                <a href="#essay" class="whitespace-nowrap">What we're proud of</a>
+                <a href="#partner-interaction" class="whitespace-nowrap">Interaction with Partners</a>
+                <a href="#reflections" class="whitespace-nowrap">Reflections</a>
+                <a href="#meet-the-team" class="whitespace-nowrap">Meet The Team</a>
+            </nav>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4 bg-[#333] text-white"> <a href="#problem"
+                class="block py-2 hover:bg-blue-500 rounded px-2">Problem</a>
+            <a href="#solution" class="block py-2 hover:bg-blue-500 rounded px-2">Solution</a>
+            <a href="#justification" class="block py-2 hover:bg-blue-500 rounded px-2">Justification</a>
+            <a href="#design-journey" class="block py-2 hover:bg-blue-500 rounded px-2">Design Journey</a>
+            <div class="block py-2 px-2">
+                <div>Prototypes</div>
+                <div class="ml-4 space-y-1">
+                    <a href="#story-poster" class="block py-2 hover:bg-blue-500 rounded px-2">Story Poster</a>
+                    <a href="#water-level-poster" class="block py-2 hover:bg-blue-500 rounded px-2">Water Level
+                        Poster</a>
+                    <a href="#story-page" class="block py-2 hover:bg-blue-500 rounded px-2">Story Page</a>
+                    <a href="#dashboard" class="block py-2 hover:bg-blue-500 rounded px-2">Dashboard Page</a>
+                    <a href="#final" class="block py-2 hover:bg-blue-500 rounded px-2">Final Solution</a>
                 </div>
             </div>
-            <a href="#poster">Poster</a>
-            <a href="#weekly-pitches">Weekly Pitches</a>
-            <a href="#essay">What we're proud of</a>
-            <a href="#partner-interaction">Interaction with Partners</a>
-            <a href="#reflections">Reflections</a>
-            <a href="#meet-the-team">Meet The Team</a>
+            <a href="#poster" class="block py-2 hover:bg-blue-500 rounded px-2">Poster</a>
+            <a href="#weekly-pitches" class="block py-2 hover:bg-blue-500 rounded px-2">Weekly Pitches</a>
+            <a href="#essay" class="block py-2 hover:bg-blue-500 rounded px-2">What we're proud of</a>
+            <a href="#partner-interaction" class="block py-2 hover:bg-blue-500 rounded px-2">Interaction with
+                Partners</a>
+            <a href="#reflections" class="block py-2 hover:bg-blue-500 rounded px-2">Reflections</a>
+            <a href="#meet-the-team" class="block py-2 hover:bg-blue-500 rounded px-2">Meet The Team</a>
         </div>
     </header>
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+
 
     <!-- Hero -->
     <section id="home"
@@ -446,7 +497,8 @@
                 Poster
             </h2>
             <div class="flex justify-center">
-                <img src="images/poster/poster.png" alt="Project Poster" class="rounded-lg shadow-lg max-w-[700px] h-auto">
+                <img src="images/poster/poster.png" alt="Project Poster"
+                    class="rounded-lg shadow-lg max-w-[700px] h-auto">
             </div>
         </div>
     </section>
@@ -500,7 +552,8 @@
                 <!-- Reflection Card -->
                 <div class="p-6 bg-white rounded-lg shadow text-left">
                     <h3 class="text-xl font-bold mb-2">Richard Peters Aksarachai (2957830A)</h3>
-                    <p class="text-gray-600">Going down to the river to interview members of the public aswell as to observe the river conditions did help generate ideas on how to solve the problem.</p>
+                    <p class="text-gray-600">Going down to the river to interview members of the public aswell as to
+                        observe the river conditions did help generate ideas on how to solve the problem.</p>
                 </div>
 
                 <div class="p-6 bg-white rounded-lg shadow text-left">
